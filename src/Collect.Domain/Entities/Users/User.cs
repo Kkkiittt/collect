@@ -3,8 +3,10 @@ using Collect.Domain.Entities.General;
 using Collect.Domain.Entities.Items;
 using Collect.Domain.Entities.Reactions;
 
-namespace Collect.Domain.Entities.Users;
+using Microsoft.EntityFrameworkCore;
 
+namespace Collect.Domain.Entities.Users;
+[Index(nameof(Email), nameof(NickName))]
 public class User : AuditableEntity
 {
 	public string NickName { get; set; } = string.Empty;

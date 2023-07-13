@@ -2,8 +2,11 @@
 using Collect.Domain.Entities.Items;
 using Collect.Domain.Entities.Properties;
 
+using Microsoft.EntityFrameworkCore;
+
 namespace Collect.Domain.Entities.Collections;
 
+[Index(nameof(Name))]
 public class Collection : AuditableEntity
 {
 	public string Name { get; set; } = string.Empty;

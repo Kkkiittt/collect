@@ -4,8 +4,10 @@ using Collect.Domain.Entities.Reactions;
 using Collect.Domain.Entities.Tags;
 using Collect.Domain.Entities.Users;
 
-namespace Collect.Domain.Entities.Items;
+using Microsoft.EntityFrameworkCore;
 
+namespace Collect.Domain.Entities.Items;
+[Index(nameof(CollectionId), nameof(Name))]
 public class Item : AuditableEntity
 {
 	public long CollectionId { get; set; }

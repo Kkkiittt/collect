@@ -2,8 +2,10 @@
 using Collect.Domain.Entities.Items;
 using Collect.Domain.Entities.Users;
 
-namespace Collect.Domain.Entities.Reactions;
+using Microsoft.EntityFrameworkCore;
 
+namespace Collect.Domain.Entities.Reactions;
+[Index(nameof(ItemId), nameof(UserId))]
 public class Comment : AuditableEntity
 {
 	public string Content { get; set; } = string.Empty;
