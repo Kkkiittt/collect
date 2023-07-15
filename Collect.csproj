@@ -6,4 +6,29 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include=".Domain\Entities\Collections\Collection.cs" />
+    <Compile Include=".Domain\Entities\General\AuditableEntity.cs" />
+    <Compile Include=".Domain\Entities\General\BaseEntity.cs" />
+    <Compile Include=".Domain\Entities\Items\Item.cs" />
+    <Compile Include=".Domain\Entities\Properties\Property.cs" />
+    <Compile Include=".Domain\Entities\Properties\Type.cs" />
+    <Compile Include=".Domain\Entities\Reactions\Comment.cs" />
+    <Compile Include=".Domain\Entities\Reactions\Like.cs" />
+    <Compile Include=".Domain\Entities\Tags\Tag.cs" />
+    <Compile Include=".Domain\Entities\Users\User.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include=".Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>
