@@ -1,7 +1,10 @@
+using Collect.Configurations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.ConfigureDb();
 
 var app = builder.Build();
 

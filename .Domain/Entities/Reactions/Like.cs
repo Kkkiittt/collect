@@ -1,11 +1,12 @@
-﻿using Collect.Domain.Entities.Items;
+﻿using Collect.Domain.Entities.General;
+using Collect.Domain.Entities.Items;
 using Collect.Domain.Entities.Users;
 
 using Microsoft.EntityFrameworkCore;
 
 namespace Collect.Domain.Entities.Reactions;
 [Index(nameof(ItemId), nameof(UserId))]
-public class Like
+public class Like : BaseEntity
 {
 	public long UserId { get; set; }
 	public User User { get; set; } = new User();

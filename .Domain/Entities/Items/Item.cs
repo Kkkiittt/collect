@@ -17,8 +17,6 @@ public class Item : AuditableEntity
 
 	public List<Tag> Tags { get; set; } = new List<Tag>();
 
-	public List<User> LikedUsers { get; set; } = new List<User>();
-
 	public List<Comment> Comments { get; set; } = new List<Comment>();
 
 	public string[] Properties { get; set; } = new string[0];

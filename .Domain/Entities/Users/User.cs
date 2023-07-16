@@ -22,6 +22,4 @@ public class User : AuditableEntity
 	public List<Collection> Collections { get; set; } = new List<Collection>();
 
 	public List<Comment> Comments { get; set; } = new List<Comment>();
-
-	public List<Item> LikedItems { get; set; } = new List<Item>();
 }

@@ -1,6 +1,7 @@
 ﻿using Collect.Domain.Entities.General;
 using Collect.Domain.Entities.Items;
 using Collect.Domain.Entities.Properties;
+using Collect.Domain.Entities.Users;
 
 using Microsoft.EntityFrameworkCore;
 
@@ -18,4 +19,7 @@ public class Collection : AuditableEntity
 	public List<Property> Properties { get; set; } = new List<Property>();
 
 	public List<Item> Items { get; set; } = new List<Item>();
+
+	public long UserId { get; set; }
+	public User User { get; set; } = new User();
 }
