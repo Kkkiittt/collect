@@ -16,17 +16,17 @@ public class Context : DbContext
 
 	}
 
-	public virtual DbSet<User> Users { get; set; } = default!;
+	public virtual DbSet<User> Users { get; } = default!;
 
-	public virtual DbSet<Collection> Collections { get; set; } = default!;
+	public virtual DbSet<Collection> Collections { get; } = default!;
 
-	public virtual DbSet<Item> Items { get; set; } = default!;
+	public virtual DbSet<Item> Items { get; } = default!;
 
-	public virtual DbSet<Property> Properties { get; set; } = default!;
+	public virtual DbSet<Property> Properties { get; } = default!;
 
-	public virtual DbSet<Comment> Comments { get; set; } = default!;
+	public virtual DbSet<Comment> Comments { get; } = default!;
 
-	public virtual DbSet<Like> Like { get; set; } = default!;
+	public virtual DbSet<Like> Like { get; } = default!;
 
-	public virtual DbSet<Tag> Tags { get; set; } = default!;
+	public virtual DbSet<Tag> Tags { get; } = default!;
 }

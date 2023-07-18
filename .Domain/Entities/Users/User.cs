@@ -19,6 +19,8 @@ public class User : AuditableEntity
 
 	public bool IsAdmin { get; set; }
 
+	public bool Banned { get; set; }
+
 	public List<Collection> Collections { get; set; } = new List<Collection>();
 
 	public List<Comment> Comments { get; set; } = new List<Comment>();

@@ -18,13 +18,23 @@
     <Compile Include=".Domain\Entities\Reactions\Like.cs" />
     <Compile Include=".Domain\Entities\Tags\Tag.cs" />
     <Compile Include=".Domain\Entities\Users\User.cs" />
+    <Compile Include=".Services\Dtos\Users\LoginDto.cs" />
+    <Compile Include=".Services\Dtos\Users\RegisterDto.cs" />
+    <Compile Include=".Services\Dtos\Users\UpdateDto.cs" />
+    <Compile Include=".Services\Interfaces\Common\IEmailService.cs" />
+    <Compile Include=".Services\Interfaces\Common\ISaveService.cs" />
+    <Compile Include=".Services\Services\Common\EmailService.cs" />
+    <Compile Include=".Services\Interfaces\IUserService.cs" />
+    <Compile Include=".Services\Helpers\Hasher.cs" />
+    <Compile Include=".Services\Services\Common\SaveService.cs" />
+    <Compile Include=".Services\Services\UserService.cs" />
+    <Compile Include=".Services\Utils\CodeException.cs" />
+    <Compile Include=".Services\ViewModels\UserBaseViewModel.cs" />
+    <Compile Include=".Services\ViewModels\UserFullViewModel.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include=".Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.20">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
